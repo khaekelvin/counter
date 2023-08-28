@@ -19,9 +19,12 @@
 
 h1 {
   margin: 40px 20px;
+  font-family: "Tilt Prism", cursive;
 }
 
 button {
+  font-family: "Epilogue", sans-serif;
+
   padding: 10px 20px;
   margin: 20px 40px;
   background-color: white;
