@@ -1,34 +1,25 @@
-import React, { Component } from "react";
+import { useState } from "react";
 
-export class counter extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      count: 0,
-    };
-  }
+function Counter() {
+  const [count, setCount] = useState(0);
 
-  render() {
-    return (
-      <div className="top">
-        <h1>Counter = {this.state.count}</h1>
-        <button onClick={() => this.addNum()}>Add</button>
-        <button onClick={() => this.subNum()}>Subtract</button>
-      </div>
-    );
-  }
+  const add = () => {
+    setCount((count) => count + 1);
+  };
 
-  addNum() {
-    this.setState({
-      count: this.state.count + 1,
-    });
-  }
+  const subtract = () => {
+    if (count > 0) {
+      setCount(count - 1);
+    }
+  };
 
-  subNum() {
-    this.setState({
-      count: this.state.count - 1,
-    });
-  }
+  return (
+    <div>
+      <h1>counter = {count}</h1>
+      <button onClick={add}>Increment</button>
+      <button onClick={subtract}>Increment</button>
+    </div>
+  );
 }
 
-export default counter;
+export default Counter;

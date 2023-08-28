@@ -1,33 +1,21 @@
-.App {
+body {
   text-align: center;
+  background-color: rgb(114, 108, 106);
+}
+
+nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 100vh;
-}
-* {
-  margin: 0;
+  background-color: azure;
 }
 
-.top {
-  width: 300px;
-  height: 300px;
-  border-radius: 10px;
-  background-color: rgb(42, 48, 48);
-  color: rgb(255, 255, 255);
+ul {
+  display: flex;
+  list-style: none;
 }
 
-h1 {
-  margin: 40px 20px;
-  font-family: "Tilt Prism", cursive;
-}
-
-button {
-  font-family: "Epilogue", sans-serif;
-
-  padding: 10px 20px;
-  margin: 20px 40px;
-  background-color: white;
-  border: none;
-  border-radius: 10px;
+li {
+  margin: 0 30px;
+  font-weight: bold;
 }
